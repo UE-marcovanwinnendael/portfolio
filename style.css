@@ -1,0 +1,228 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #ffffff; /* Light grey background */
+    color: #333; /* Darker text for contrast */
+    line-height: 1.6;
+    text-transform: uppercase; /* Makes all text uppercase */
+    font-weight: bold; /* Makes all text bold */
+}
+
+
+header {
+    background: #423d3d; /* Deep teal background */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center; /* Center aligning header text */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Centering navbar items */
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    padding: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; /* Making the text bold */
+}
+
+.hero {
+    background-color: #ffffff; 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 5px solid #b1867c; /* Adding a bottom border */
+}
+
+.hero-content h1 {
+    font-size: 3rem; /* Larger font size */
+    margin-bottom: 0.5rem;
+    color: #6e0f31; 
+}
+
+.hero-content p {
+    font-size: 1.2rem; /* Larger paragraph font size */
+    max-width: 600px; /* Restricting width for readability */
+    margin: auto; /* Centering the text block */
+}
+
+.portfolio {
+    text-align: center;
+}
+
+.curriculum {
+    text-align: center;
+}
+
+.services {
+    text-align: center;
+}
+    
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    background: #e76f51; /* Warm red background */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none; /* Removing border */
+    cursor: pointer; /* Cursor effect on hover */
+}
+
+.about-me, footer {
+    padding: 40px 20px;
+    text-align: center;
+    background: #ffffff; 
+    color: #333;
+    border-top: 3px solid #918181; /* Adding a top border */
+}
+
+.personalbanner {
+    background-color: #ffffff;
+    display: flex;
+    width: 100%; /* Ensure it takes the full width of its parent */
+    max-width: 1300px; /* Max width to constrain its size */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.responsive-banner {
+    width: 100%; /* Make the image fill the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #423d3d; /* Matching footer with header */
+    color: #fff
+}
+
+/* Responsive design adjustments */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .welcome img {
+        max-width: 100%; /* Ensure image is not larger than its container */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Images are inline by default, this changes it to block-level */
+        margin-left: auto; /* Auto margins on both sides will center the image */
+        margin-right: auto;
+    }
+
+    .about {
+        text-align: center;
+        padding: 20px;
+        max-width: 800px; /* Set a reasonable maximum width for the container */
+        margin: 0 auto; /* Center the container */
+    }
+    
+    .responsive-banner {
+        max-width: 100%; /* This makes the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Change the display from inline to block */
+        margin: 0 auto; /* Auto margins on the left and right to center the image */
+        max-height: 300px; /* Set a maximum height for the image */
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+
+    .nav-links li {
+        padding: 10px;
+    }
+
+    .nav-links a {
+        text-align: center;
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+    .projects-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+    }
+    
+    .project {
+        width: 45%; /* Adjust based on preference and screen size */
+        margin: 10px;
+        padding: 15px;
+        border: 1px solid #ccc; /* Optional border for visibility */
+    }
+    
+    .video-container {
+        width: 100%; /* Adjust to fit inside the project div */
+        height: auto; /* Adjust based on the aspect ratio of your video */
+        margin-bottom: 15px;
+    }
+    
+    video {
+        width: 100%;
+        height: auto;
+    }
+    .comment-box {
+        margin-top: 40px;
+        text-align: left;
+        width: 60%;
+        max-width: 600px;
+    }
+    
+    .services-item {
+        text-align: center;
+    }
+
+    .comment-box h2 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+    
+    .comment-box textarea {
+        border-radius: 20px; /* Rounded borders */
+        border: 1px solid #ccc; /* Solid border for the outline */
+        outline: 1px solid #0077b5; /* Adding an outline */
+        padding: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        resize: none; /* Making textarea non-resizable */
+    }
+    
+    .comment-box button {
+        background-color: #0077b5;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .comment-box button:hover {
+        background-color: #005f87;
+    }    
+    
+    }
+ 
